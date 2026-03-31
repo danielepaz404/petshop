@@ -60,7 +60,7 @@
                 <div class="row">
                     <div class="col-md-6 mb-4">
                         <div class="card h-100">
-                            <img src="images/toy_dog_gum_spines_0.jpg" class="card-img-top" alt="Mordedor">
+                            <img src="images/dog-toy.jpg" class="card-img-top" alt="Cachorro mordendo brinquedo">
                             <div class="card-body">
                                 <h5 class="card-title">Mordedor</h5>
                                 <p class="card-text">Mordedor para cães</p>
@@ -71,10 +71,10 @@
 
                     <div class="col-md-6 mb-4">
                         <div class="card h-100">
-                            <img src="images/mouse_toys_decoration_funny.jpg" class="card-img-top" alt="Ratinhos">
+                            <img src="images/cat-toy.jpg" class="card-img-top" alt="Gato mordendo brinquedo">
                             <div class="card-body">
-                                <h5 class="card-title">Ratinhos</h5>
-                                <p class="card-text">Ratinhos para gatos</p>
+                                <h5 class="card-title">Varinhas</h5>
+                                <p class="card-text">Varinhas para gatos</p>
                                 <p><strong>R$25,00</strong></p>
                             </div>
                         </div>
@@ -141,146 +141,183 @@
             <section id="servicos">
                 <h2>Serviços</h2>
 
-                <div class="card mb-4">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="images/bath.jpg" class="img-fluid rounded-start" alt="Cachorro tomando banho">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Banho e Tosa</h5>
-                                <p class="card-text">Deixe seu pet limpo e bem cuidado</p>
+                <div class="row">
 
-                                <p><strong>Inclui:</strong> Banho, Tosa, Corte de Unhas e Limpeza de Ouvidos.</p>
-                                <p><strong>Duração:</strong> Aproximadamente 1 hora.</p>
+                    <!-- Banho -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="images/bath.jpg" class="card-img-top" alt="Cachorro tomando banho">
+                            <div class="card-body">
+                                <h5 class="card-title">Banho</h5>
+                                <p class="card-text">Deixe seu pet limpo e cheiroso</p>
+
+                                <p><strong>Inclui:</strong> Banho, limpeza de ouvidos e corte de unhas.</p>
+                                <p><strong>Duração:</strong> Aproximadamente 40 minutos.</p>
                                 <p><strong>Tele-busca:</strong> Acréscimo de R$30,00</p>
 
-                                <p><strong>Preço:</strong> R$80,00</p>
+                                <p><strong>Preço:</strong> R$50,00</p>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Tosa -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="images/cat-grooming.jpg" class="card-img-top" alt="Gato sendo escovado">
+                            <div class="card-body">
+                                <h5 class="card-title">Tosa</h5>
+                                <p class="card-text">Cuidados estéticos para o seu pet</p>
+
+                                <p><strong>Inclui:</strong> Tosa completa e acabamento.</p>
+                                <p><strong>Duração:</strong> Aproximadamente 40 minutos.</p>
+                                <p><strong>Tele-busca:</strong> Acréscimo de R$30,00</p>
+
+                                <p><strong>Preço:</strong> R$40,00</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
             <section id="agendamento">
                 <h2>Agendamento</h2>
 
-                <form id="formAgendamento" class="border rounded p-4">
+                <form id="formAgendamento" class="border rounded p-4" novalidate>
 
                     <h4 class="mb-3">Dados do Cliente</h4>
 
                     <div class="row mb-3">
                         <div class="col-md-6">
-                            <label class="form-label">Nome</label>
-                            <input type="text" class="form-control" required>
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control" required>
+                            <div class="invalid-feedback">Informe o nome.</div>
                         </div>
 
                         <div class="col-md-6">
-                            <label class="form-label">CPF</label>
-                            <input type="text" class="form-control" required>
+                            <label for="cpf" class="form-label">CPF</label>
+                            <input type="text" id="cpf" name="cpf" class="form-control" required>
+                            <div class="invalid-feedback">Informe o CPF.</div>
                         </div>
                     </div>
 
                     <div class="row mb-3">
                         <div class="col-md-6">
-                            <label class="form-label">Endereço</label>
-                            <input type="text" class="form-control" required>
+                            <label for="endereco" class="form-label">Endereço</label>
+                            <input type="text" id="endereco" name="endereco" class="form-control" required>
+                            <div class="invalid-feedback">Informe o endereço.</div>
                         </div>
 
                         <div class="col-md-6">
-                            <label class="form-label">E-mail</label>
-                            <input type="email" class="form-control" required>
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                            <div class="invalid-feedback">Informe um e-mail válido.</div>
                         </div>
                     </div>
 
                     <div class="mb-3">
-                        <label class="form-label">Telefone</label>
-                        <input type="tel" class="form-control" required>
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" class="form-control" required>
+                        <div class="invalid-feedback">Informe o telefone.</div>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label d-block">Sexo</label>
 
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="sexo" id="masc">
+                            <input class="form-check-input" type="radio" name="sexo" id="masc" value="masculino"
+                                required>
                             <label class="form-check-label" for="masc">Masculino</label>
                         </div>
 
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="sexo" id="fem">
+                            <input class="form-check-input" type="radio" name="sexo" id="fem" value="feminino" required
+                                checked>
                             <label class="form-check-label" for="fem">Feminino</label>
                         </div>
+
+                        <div class="invalid-feedback">Selecione o sexo.</div>
                     </div>
 
                     <h4 class="mb-3 mt-4">Dados do Pet</h4>
 
                     <div class="row mb-3">
                         <div class="col-md-4">
-                            <label class="form-label">Nome do Pet</label>
-                            <input type="text" class="form-control" required>
+                            <label for="petNome" class="form-label">Nome do Pet</label>
+                            <input type="text" id="petNome" name="pet_nome" class="form-control" required>
+                            <div class="invalid-feedback">Informe o nome do pet.</div>
                         </div>
 
                         <div class="col-md-4">
-                            <label class="form-label">Raça</label>
-                            <input type="text" class="form-control" required>
+                            <label for="raca" class="form-label">Raça</label>
+                            <input type="text" id="raca" name="raca" class="form-control" required>
+                            <div class="invalid-feedback">Informe a raça.</div>
                         </div>
 
                         <div class="col-md-4">
-                            <label class="form-label">Idade</label>
-                            <input type="number" class="form-control" required>
+                            <label for="idade" class="form-label">Idade</label>
+                            <input type="number" id="idade" name="idade" class="form-control" required>
+                            <div class="invalid-feedback">Informe a idade.</div>
                         </div>
                     </div>
 
                     <h4 class="mb-3 mt-4">Serviço</h4>
 
                     <div class="mb-3">
-                        <label class="form-label">Tipo de Serviço</label>
-                        <select class="form-select" required>
+                        <label for="servico" class="form-label">Tipo de Serviço</label>
+                        <select id="servico" name="servico" class="form-select" required>
                             <option value="">Escolha</option>
-                            <option value="1">Banho</option>
-                            <option value="2">Tosa</option>
-                            <option value="3">Banho e Tosa</option>
+                            <option value="banho">Banho</option>
+                            <option value="tosa">Tosa</option>
                         </select>
+                        <div class="invalid-feedback">Selecione um serviço.</div>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label d-block">Tipo de Atendimento</label>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="tipo" id="tele">
+                            <input class="form-check-input" type="radio" name="tipo" id="tele" value="telebusca"
+                                required checked>
                             <label class="form-check-label" for="tele">Tele-busca</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="tipo" id="local">
+                            <input class="form-check-input" type="radio" name="tipo" id="local" value="presencial"
+                                required>
                             <label class="form-check-label" for="local">Levar no local</label>
                         </div>
+
+                        <div class="invalid-feedback">Selecione o tipo de atendimento.</div>
                     </div>
 
                     <div class="row mb-3">
                         <div class="col-md-6">
-                            <label class="form-label">Data</label>
-                            <input type="date" class="form-control" required>
+                            <label for="data" class="form-label">Data</label>
+                            <input type="date" id="data" name="data" class="form-control" required>
+                            <div class="invalid-feedback">Selecione a data.</div>
                         </div>
 
                         <div class="col-md-6">
-                            <label class="form-label">Hora</label>
-                            <input type="time" class="form-control" required>
+                            <label for="hora" class="form-label">Hora</label>
+                            <input type="time" id="hora" name="hora" class="form-control" required>
+                            <div class="invalid-feedback">Selecione o horário.</div>
                         </div>
                     </div>
 
                     <div class="form-check mb-3">
-                        <input class="form-check-input" type="checkbox" id="termos" required>
+                        <input class="form-check-input" type="checkbox" id="termos" name="termos" value="aceito"
+                            required>
                         <label class="form-check-label" for="termos">
                             Aceito os termos
                         </label>
+                        <div class="invalid-feedback">Você deve aceitar os termos.</div>
                     </div>
 
                     <button type="submit" class="btn btn-primary w-100">Agendar</button>
 
                 </form>
 
-                <p id="mensagem"></p>
             </section>
         </main>
 
@@ -305,12 +342,35 @@
         crossorigin="anonymous"></script>
 
     <script>
-        document.getElementById("formAgendamento").addEventListener("submit", function (event) {
+        const form = document.getElementById("formAgendamento");
+
+        form.addEventListener("submit", function (event) {
             event.preventDefault();
 
-            document.getElementById("mensagem").innerText = "Agendamento realizado com sucesso!";
+            if (!form.checkValidity()) {
+                event.stopPropagation();
+                form.classList.add("was-validated");
+                return;
+            }
+
+            const toast = new bootstrap.Toast(document.getElementById("toastSucesso"));
+            toast.show();
+
+            form.reset();
+            form.classList.remove("was-validated");
         });
     </script>
+
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="toastSucesso" class="toast align-items-center text-bg-success border-0" role="alert">
+            <div class="d-flex">
+                <div class="toast-body">
+                    Agendamento realizado com sucesso!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

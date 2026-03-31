@@ -2,3 +2,7 @@
     height: 600px;
     object-fit: cover;
 }
+
+.was-validated .form-check-input:invalid ~ .invalid-feedback {
+    display: block;
+}
