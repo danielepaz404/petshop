@@ -5,116 +5,312 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patinhas Petshop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>Bem-vindo ao Patinhas Petshop!</h1>
-        <p>Oferecemos os melhores serviços e produtos para o seu pet.</p>
+    <div class="container">
+        <header>
+            <h1>Bem-vindo ao Patinhas Petshop!</h1>
+            <p>Oferecemos os melhores serviços e produtos para o seu pet.</p>
 
-        <nav>
-            <a href="#">Home</a> |
-            <a href="#acessorios">Acessórios</a> |
-            <a href="#racao">Rações Secas</a> |
-            <a href="#higiene">Higiene e Limpeza</a> |
-            <a href="#servicos">Serviços</a>
-        </nav>
-    </header>
+            <nav>
+                <a href="#">Home</a> |
+                <a href="#acessorios">Acessórios</a> |
+                <a href="#racao">Rações Secas</a> |
+                <a href="#higiene">Higiene e Limpeza</a> |
+                <a href="#servicos">Serviços</a>
+            </nav>
+        </header>
 
-    <main>
-        <section id="acessorios">
-            <h2>Acessórios</h2>
-            <ul>
-                <li>
-                    <h3>Mordedor (R$15,00)</h3>
-                    <figure><img src="images/toy_dog_gum_spines_0.jpg" alt="Mordedor" width="200" height="150">
-                        <figcaption>Mordedor para cães</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <h3>Ratinhos (R$25,00)</h3>
-                    <figure><img src="images/mouse_toys_decoration_funny.jpg" alt="Ratinhos" width="200" height="150">
-                        <figcaption>Ratinhos para gatos</figcaption>
-                    </figure>
-                </li>
+        <div id="main-carousel" class="carousel slide mb-4">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="images/carousel-1.jpg" class="d-block w-100"
+                        alt="Gato de olhos fechados cercado por grama e flores">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel-2.jpg" class="d-block w-100"
+                        alt="Cachorro com brinquedos em um fundo amarelo vibrante">
+                </div>
+                <div class="carousel-item active">
+                    <img src="images/carousel-3.jpg" class="d-block w-100"
+                        alt="Cachorro de óculos em um fundo vermelho vibrante">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel-4.jpg" class="d-block w-100"
+                        alt="Gato deitado com olhar curioso em um fundo amarelo">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#main-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#main-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <main>
+            <section id="acessorios">
+                <h2>Acessórios</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="images/toy_dog_gum_spines_0.jpg" class="card-img-top" alt="Mordedor">
+                            <div class="card-body">
+                                <h5 class="card-title">Mordedor</h5>
+                                <p class="card-text">Mordedor para cães</p>
+                                <p><strong>R$15,00</strong></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="images/mouse_toys_decoration_funny.jpg" class="card-img-top" alt="Ratinhos">
+                            <div class="card-body">
+                                <h5 class="card-title">Ratinhos</h5>
+                                <p class="card-text">Ratinhos para gatos</p>
+                                <p><strong>R$25,00</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="racao">
+                <h2>Rações Secas</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="images/kibble_dog_food_pet.jpg" class="card-img-top" alt="Ração Golden">
+                            <div class="card-body">
+                                <h5 class="card-title">Ração Golden</h5>
+                                <p class="card-text">Ração de alta qualidade para cães adultos.</p>
+                                <p><strong>R$40,00</strong></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="images/dry-pet-food-1485859924CT3.jpg" class="card-img-top" alt="Ração Premier">
+                            <div class="card-body">
+                                <h5 class="card-title">Ração Premier</h5>
+                                <p class="card-text">Ração premium com ingredientes selecionados.</p>
+                                <p><strong>R$50,00</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="higiene">
+                <h2>Higiene e Limpeza</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="images/pet_head_dry_shampoo_0.jpg" class="card-img-top" alt="Shampoo Banho Seco">
+                            <div class="card-body">
+                                <h5 class="card-title">Shampoo Banho Seco</h5>
+                                <p class="card-text">Shampoo para banho seco</p>
+                                <p><strong>R$20,00</strong></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="images/just_lion_chilling_in.jpg" class="card-img-top" alt="Caixa de Areia">
+                            <div class="card-body">
+                                <h5 class="card-title">Caixa de Areia</h5>
+                                <p class="card-text">Caixa de areia para gatos</p>
+                                <p><strong>R$30,00</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             </ul>
-        </section>
+            </section>
 
-        <section id="racao">
-            <h2>Rações Secas</h2>
-            <ul>
-                <li>
-                    <h3>Ração Golden (R$40,00)</h3>
-                    <figure><img src="images/kibble_dog_food_pet.jpg" alt="Ração Golden" width="200" height="150">
-                        <figcaption>Ração de alta qualidade para cães adultos.</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <h3>Ração Premier (R$50,00)</h3>
-                    <figure><img src="images/dry-pet-food-1485859924CT3.jpg" alt="Ração Premier" width="200"
-                            height="150">
-                        <figcaption>Ração premium com ingredientes selecionados.</figcaption>
-                    </figure>
-                </li>
-            </ul>
-        </section>
+            <section id="servicos">
+                <h2>Serviços</h2>
 
-        <section id="higiene">
-            <h2>Higiene e Limpeza</h2>
-            <ul>
-                <li>
-                    <h3>Shampoo Banho Seco (R$20,00)</h3>
-                    <figure><img src="images/pet_head_dry_shampoo_0.jpg" alt="Shampoo Banho Seco" width="200" height="150">
-                        <figcaption>Shampoo para banho seco</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <h3>Caixa de Areia (R$30,00)</h3>
-                    <figure><img src="images/just_lion_chilling_in.jpg" alt="Caixa de Areia" width="200" height="150">
-                        <figcaption>Caixa de areia para gatos</figcaption>
-                    </figure>
-                </li>
-            </ul>
-        </section>
-        </ul>
-        </section>
+                <div class="card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/bath.jpg" class="img-fluid rounded-start" alt="Cachorro tomando banho">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Banho e Tosa</h5>
+                                <p class="card-text">Deixe seu pet limpo e bem cuidado</p>
 
-        <section id="servicos">
-            <h2>Serviços</h2>
+                                <p><strong>Inclui:</strong> Banho, Tosa, Corte de Unhas e Limpeza de Ouvidos.</p>
+                                <p><strong>Duração:</strong> Aproximadamente 1 hora.</p>
+                                <p><strong>Tele-busca:</strong> Acréscimo de R$30,00</p>
 
-            <aside>
-                <img src="images/black_lab_labrador_dog.jpg" alt="Cachorro tomando banho" width="300" height="300">
-            </aside>
+                                <p><strong>Preço:</strong> R$80,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            <section id="agendamento">
+                <h2>Agendamento</h2>
 
-            <ul>
-                <li>
-                    <h3>Banho e Tosa (R$ 80,00)</h3>
-                    <subtitle>Deixe seu pet limpo e bem cuidado</subtitle>
+                <form id="formAgendamento" class="border rounded p-4">
 
-                    <p><b>Inclui:</b> Banho, Tosa, Corte de Unhas e Limpeza de Ouvidos.</p>
-                    <p><b>Duração:</b> Aproximadamente 1 hora.</p>
+                    <h4 class="mb-3">Dados do Cliente</h4>
 
-                    <p><b>Tele-busca:</b> Acréscimo de R$ 30,00</p>
-                </li>
-            </ul>
-        </section>
-    </main>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Nome</label>
+                            <input type="text" class="form-control" required>
+                        </div>
 
-    <footer>
-        <p>Contato: (11) 1234-5678 | Endereço: Rua dos Pets, 123</p>
-        
-        <nav>
-            <a href="#">Home</a> |
-            <a href="#acessorios">Acessórios</a> |
-            <a href="#racao">Rações Secas</a> |
-            <a href="#higiene">Higiene e Limpeza</a> |
-            <a href="#servicos">Serviços</a>
-        </nav>
-        
-        <p>© 2026 Patinhas Petshop. Todos os direitos reservados.</p>
-        <p>Desenvolvido por Daniele Paz para a disciplina de Fundamentos de Sistemas Web</p>
-    </footer>
+                        <div class="col-md-6">
+                            <label class="form-label">CPF</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Endereço</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">E-mail</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Telefone</label>
+                        <input type="tel" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label d-block">Sexo</label>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="sexo" id="masc">
+                            <label class="form-check-label" for="masc">Masculino</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="sexo" id="fem">
+                            <label class="form-check-label" for="fem">Feminino</label>
+                        </div>
+                    </div>
+
+                    <h4 class="mb-3 mt-4">Dados do Pet</h4>
+
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label class="form-label">Nome do Pet</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label class="form-label">Raça</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label class="form-label">Idade</label>
+                            <input type="number" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <h4 class="mb-3 mt-4">Serviço</h4>
+
+                    <div class="mb-3">
+                        <label class="form-label">Tipo de Serviço</label>
+                        <select class="form-select" required>
+                            <option value="">Escolha</option>
+                            <option value="1">Banho</option>
+                            <option value="2">Tosa</option>
+                            <option value="3">Banho e Tosa</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label d-block">Tipo de Atendimento</label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tipo" id="tele">
+                            <label class="form-check-label" for="tele">Tele-busca</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tipo" id="local">
+                            <label class="form-check-label" for="local">Levar no local</label>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Data</label>
+                            <input type="date" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Hora</label>
+                            <input type="time" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="termos" required>
+                        <label class="form-check-label" for="termos">
+                            Aceito os termos
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Agendar</button>
+
+                </form>
+
+                <p id="mensagem"></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Contato: (11) 1234-5678 | Endereço: Rua dos Pets, 123</p>
+
+            <nav>
+                <a href="#">Home</a> |
+                <a href="#acessorios">Acessórios</a> |
+                <a href="#racao">Rações Secas</a> |
+                <a href="#higiene">Higiene e Limpeza</a> |
+                <a href="#servicos">Serviços</a>
+            </nav>
+
+            <p>© 2026 Patinhas Petshop. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Daniele Paz para a disciplina de Fundamentos de Sistemas Web</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document.getElementById("formAgendamento").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            document.getElementById("mensagem").innerText = "Agendamento realizado com sucesso!";
+        });
+    </script>
 </body>
 
 </html>
